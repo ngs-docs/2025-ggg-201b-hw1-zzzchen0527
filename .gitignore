@@ -1,0 +1,5 @@
+*~
+Snakefile
+outputs
+*.gz
+.snakemake
