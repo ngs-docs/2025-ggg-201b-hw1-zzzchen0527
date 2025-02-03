@@ -1,0 +1,27 @@
+1. Which variants are present in which samples?
+1)In SRR2584403,
+Variant 1 location: 1329520, REF allele: T, Sample allele:G
+Variant 2 location: 4141016, REF allele: C, Sample allele:A
+2)In SRR2584404,
+Variant 1 location: 238917, REF allele: G, Sample allele:T
+Variant 2 location: 806308, REF allele: ATT , Sample allele: AT
+Variant 3 location: 1329520, REF allele: T, Sample allele:G
+Variant 4 location: 4141016, REF allele: C, Sample allele:A
+3)In SRR2584405,
+Variant 1 location: 64952, REF allele: C, Sample allele:T
+Variant 2 location: 708118, REF allele: T , Sample allele: C
+Variant 3 location: 1733754, REF allele: A, Sample allele:T
+Variant 4 location: 2103887, REF allele: ACAGCCAGCCAGCCAGCCAGCCAGCCAGCCAG, Sample allele:ACAGCCAGCCAGCCAGCCAGCCAGCCAGCCAGCCAG
+Variant 5 location: 3762120, REF allele: C, Sample allele:A
+4)In SRR2584857,
+Variant 1 location: 920514, REF allele: T, Sample allele:C
+Variant 2 location: 3931002, REF allele: A , Sample allele: C
+Variant 3 location: 4141441, REF allele: C, Sample allele:T
+Variant 4 location: 4202391, REF allele: T, Sample allele:G
+Variant 5 location: 4530767, REF allele: CACCCTAACCCT, Sample allele:CACCCTAACCCTAACCCT
+
+2. Which variants are shared between two or more samples?
+Variant with REF allele: T, Sample allele:G is shared among SRR2584403,SRR2584404 and SRR2584857
+Variant with REF allele: C, Sample allele:A is shared among SRR2584403,SRR2584404 and SRR2584405
+Variant with REF allele: C, Sample allele:T is shared between SRR2584405 and SRR2584857
+

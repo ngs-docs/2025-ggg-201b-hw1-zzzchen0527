@@ -1,4 +1,4 @@
-SAMPLES = ["SRR2584857_1"]
+SAMPLES = ["SRR2584857_1","SRR2584403_1", "SRR2584404_1", "SRR2584405_1"]
 GENOME = ["ecoli-rel606"]
 
 rule make_vcf:
@@ -53,7 +53,10 @@ rule call_variants:
         bcf="outputs/{reads}.x.{genome}.bcf",
         vcf="outputs/{reads}.x.{genome}.vcf",
     shell: """
+        echo running mpileup
         bcftools mpileup -Ou -f {input.ref} {input.bam} > {output.pileup}
-        bcftools call -mv -Ob {output.pileup} -o {output.bcf}
+        echo running call
+        bcftools call -mv -Ob --ploidy 1 {output.pileup} -o {output.bcf}
+        echo running view
         bcftools view {output.bcf} > {output.vcf}
     """
